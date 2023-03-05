@@ -12,10 +12,9 @@ export default class Team {
   }
 
   addAll(...characters) {
-    /* eslint-disable-next-line */
-    for (const character of characters) {
+    characters.forEach((character) => {
       this.members.add(character);
-    }
+    });
   }
 
   toArray() {
